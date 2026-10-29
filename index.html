@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO - unique title and description -->
+    <title>The Daily Crumb | Fresh Artisan Bakery Cape Town - Sourdough R55</title>
+    <meta name="description" content="Fresh bread baked at 4AM daily in Woodstock. Sourdough from R55, croissants R28, custom cakes from R350. 3 branches Woodstock Claremont Sea Point. No preservatives since 2019.">
+    <meta name="keywords" content="bakery Cape Town, sourdough bread Woodstock, croissants, custom cakes, artisan bakery">
+    <meta name="author" content="Israa Williams ST10501763">
+    <!-- canonical url -->
+    <link rel="canonical" href="https://thedailycrumb.netlify.app/index.html">
+    
+    <!-- fonts fix - lecturer said Lora and Poppins not loaded, now fixed -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- leaflet css for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    <!-- my stylesheet - lowercase css/ fix for github pages case sensitive -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header - with mobile toggle button - part 3 requirement fix -->
+    <header>
+        <div class="logo">🍞 The Daily Crumb</div>
+        <!-- mobile toggle - shows on mobile only -->
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="mainNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section - with picture element fix -->
+        <section class="hero">
+            <div>
+                <h1>Fresh Bread Baked Every Morning at 4AM</h1>
+                <p>Artisan sourdough, buttery croissants, and barista coffee. From Woodstock to Sea Point. No preservatives, just happiness since 2019. 3 branches.</p>
+                <a href="products.html" class="btn">View Our Menu</a>
+                <button id="openModal" class="btn-outline" style="margin-left:10px;">Today's Special</button>
+                
+                <div style="margin-top:20px; display:flex; gap:15px;">
+                    <div>
+                        <strong>500+</strong><br>
+                        <small>Loaves daily</small>
+                    </div>
+                    <div>
+                        <strong>3</strong><br>
+                        <small>Branches</small>
+                    </div>
+                    <div>
+                        <strong>4.8★</strong><br>
+                        <small>Google rating</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <!-- picture element - FIXED NAMES - now hero.jpg not hero.jpg.jpeg -->
+                <picture>
+                    <!-- mobile small -->
+                    <source srcset="images/bread.jpg.jpeg" media="(max-width: 480px)">
+                    <!-- tablet -->
+                    <source srcset="images/hero.jpg.jpeg" media="(max-width: 768px)">
+                    <!-- desktop default -->
+                    <img src="images/hero.jpg.jpeg" alt="Fresh sourdough bread baked daily at The Daily Crumb bakery Woodstock Cape Town artisan" class="responsive-img lightbox-img" loading="lazy" width="600" height="400">
+                </picture>
+                <p style="font-size:12px; color:#777; margin-top:5px;">Fresh sourdough loaf - baked at 4AM daily</p>
+            </div>
+        </section>
+
+        <!-- best sellers preview - 3 column grid -->
+        <div class="container">
+            <h2>Our Best Sellers</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <div class="card-body">
+                        <picture>
+                            <img src="images/bread.jpg.jpeg" alt="White sourdough loaf R55" style="width:100%; height:160px; object-fit:cover; border-radius:8px;" loading="lazy">
+                        </picture>
+                        <h3>Sourdough R55</h3>
+                        <p>Fermented 48 hours, crispy crust, soft inside. Our most popular bread.</p>
+                        <a href="products.html" class="btn">View Bread</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/croissant.jpg.jpeg" alt="Butter croissant flaky R28" style="width:100%; height:160px; object-fit:cover; border-radius:8px;" loading="lazy">
+                        <h3>Croissant R28</h3>
+                        <p>French butter, 27 flaky layers, baked fresh every morning at 5AM.</p>
+                        <a href="products.html" class="btn">View Pastries</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/coffee.jpg.jpeg" alt="Flat white coffee R32 single origin" style="width:100%; height:160px; object-fit:cover; border-radius:8px;" loading="lazy">
+                        <h3>Flat White R32</h3>
+                        <p>Single origin beans from Ethiopia, creamy milk, latte art.</p>
+                        <a href="products.html" class="btn">View Coffee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tabs - interactive element part 3 -->
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="bread">Bread</button>
+                <button class="tab-btn" data-tab="pastries">Pastries</button>
+                <button class="tab-btn" data-tab="coffee">Coffee</button>
+                <button class="tab-btn" data-tab="cakes">Custom Cakes</button>
+            </div>
+            
+            <div id="bread" class="tab-content active">
+                <h3>Artisan Bread Range</h3>
+                <p>Our sourdough is fermented for 48 hours. No commercial yeast, just natural starter. White R55, Wholewheat R60, Rye R65, Seeded R68. Bulk orders 20+ loaves get R5 off per loaf.</p>
+                <a href="enquiry.html">Enquire about bulk bread</a>
+            </div>
+            
+            <div id="pastries" class="tab-content">
+                <h3>Fresh Pastries Daily</h3>
+                <p>Baked at 5AM. Croissant R28, Pain au chocolat R32, Cinnamon bun R35, Almond croissant R38, Cheese twist R30. Box of 12 pastries R300 - perfect for office meetings.</p>
+                <a href="enquiry.html">Order catering box</a>
+            </div>
+            
+            <div id="coffee" class="tab-content">
+                <h3>Barista Coffee</h3>
+                <p>We use single origin beans. Flat white R32, Cappuccino R32, Americano R28, Latte R34, Mocha R38. Beans for sale 250g R95, 1kg R320.</p>
+                <a href="enquiry.html">Buy coffee beans</a>
+            </div>
+            
+            <div id="cakes" class="tab-content">
+                <h3>Custom Cakes</h3>
+                <p>Birthdays, weddings, corporate events. Small from R350 serves 6, Medium R550 serves 12, Large R850 serves 20. Need 48 hours notice. Halaal and nut-free options available.</p>
+                <a href="enquiry.html">Order custom cake</a>
+            </div>
+        </div>
+
+        <!-- accordion FAQ - interactive element -->
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion">
+                <div class="acc-header">Do you have Halaal options? +</div>
+                <div class="acc-body">
+                    <p>Yes, all our breads are Halaal certified. Most pastries are Halaal except almond croissant which contains alcohol-based flavouring. Custom cakes can be made Halaal on request.</p>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="acc-header">What time do you open? +</div>
+                <div class="acc-body">
+                    <p>Woodstock HQ: Mon-Sat 6AM-4PM, Sun 7AM-2PM. Claremont: Mon-Sat 6AM-3PM. Sea Point: Mon-Sun 6AM-5PM. Bread comes out oven at 6AM, pastries at 6:30AM.</p>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="acc-header">Do you deliver? +</div>
+                <div class="acc-body">
+                    <p>Yes, free delivery within 5km of Woodstock for orders over R250. For Claremont and Sea Point we use Uber delivery at customer cost. Bulk orders over R1000 free delivery Cape Town CBD.</p>
+                </div>
+            </div>
+            
+            <div class="accordion">
+                <div class="acc-header">How to order custom cakes? +</div>
+                <div class="acc-body">
+                    <p>Use enquiry form, select Custom Cake, enter quantity and date needed. Need 48 hours notice minimum. We will reply with cost and availability within 2 hours. Deposit 50% required.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- lightbox gallery - interactive - FIXED ALL NAMES -->
+        <div class="container">
+            <h2>Our Bakery Gallery - Click to Enlarge</h2>
+            <p>Click any image to view bigger.</p>
+            <div class="gallery-grid">
+                <img src="images/bread.jpg.jpeg" alt="Sourdough crusty loaf fresh from oven Woodstock bakery" class="lightbox-img">
+                <img src="images/croissant.jpg.jpeg" alt="Croissant flaky layers French butter pastry" class="lightbox-img">
+                <img src="images/coffee.jpg.jpeg" alt="Barista making flat white coffee latte art Cape Town" class="lightbox-img">
+                <img src="images/cake.jpg.jpeg" alt="Custom birthday cake with chocolate frosting R350" class="lightbox-img">
+                <img src="images/sourdough.jpg.jpeg" alt="Inside The Daily Crumb bakery Woodstock interior" class="lightbox-img">
+                <img src="images/hero.jpg.jpeg" alt="Bread loaves lined up morning bake 4AM" class="lightbox-img">
+            </div>
+        </div>
+
+        <!-- maps - lecturer said embed working maps for 3 locations -->
+        <div class="container">
+            <h2>Find Us - 3 Branches in Cape Town</h2>
+            <p>Interactive map with all 3 locations. Click markers for address.</p>
+            
+            <!-- leaflet map -->
+            <div id="map"></div>
+
+            <!-- google maps iframes for each location - extra fix -->
+            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:15px; margin-top:25px;" class="services-grid">
+                <div>
+                    <h3>Woodstock HQ</h3>
+                    <p>12 Albert Rd, Woodstock<br>021 123 4567</p>
+                    <iframe src="https://www.google.com/maps?q=12+Albert+Road+Woodstock+Cape+Town&output=embed" width="100%" height="250" style="border:0; border-radius:8px;" loading="lazy" title="Woodstock map"></iframe>
+                </div>
+                <div>
+                    <h3>Claremont</h3>
+                    <p>45 Main Rd, Claremont<br>021 765 4321</p>
+                    <iframe src="https://www.google.com/maps?q=45+Main+Road+Claremont+Cape+Town&output=embed" width="100%" height="250" style="border:0; border-radius:8px;" loading="lazy" title="Claremont map"></iframe>
+                </div>
+                <div>
+                    <h3>Sea Point</h3>
+                    <p>8 Regent Rd, Sea Point<br>021 555 0001</p>
+                    <iframe src="https://www.google.com/maps?q=8+Regent+Road+Sea+Point+Cape+Town&output=embed" width="100%" height="250" style="border:0; border-radius:8px;" loading="lazy" title="Sea Point map"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- call to action -->
+        <div class="container" style="text-align:center; padding:40px; background:#fff; border-radius:12px; margin-top:20px;">
+            <h2>Ready to Order?</h2>
+            <p>Fresh bread daily, no preservatives, baked with love since 2019.</p>
+            <a href="products.html" class="btn">View Full Menu</a>
+            <a href="enquiry.html" class="btn-outline" style="margin-left:10px;">Custom Cake Enquiry</a>
+        </div>
+    </main>
+
+    <!-- modal for todays special -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Today's Special 🔥</h2>
+            <p><strong>Buy 2 Sourdough Loaves + Get FREE Flat White for only R110</strong></p>
+            <p>Only today! Usually R142, you save R32. Valid at all 3 branches.</p>
+            <p>Show this popup at till or order online.</p>
+            <br>
+            <a href="enquiry.html" class="btn">Claim This Offer</a>
+            <button class="btn-outline" onclick="document.getElementById('myModal').style.display='none'" style="margin-left:10px;">Close</button>
+        </div>
+    </div>
+
+    <!-- lightbox for gallery -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged bakery image">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The Daily Crumb | ST10501763 Israa Williams - WEDE5020</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="contact.html">Contact</a> |
+            <a href="sitemap.xml">Sitemap</a> |
+            <a href="robots.txt">Robots</a>
+        </p>
+        <!-- figma link fix - lecturer said missing -->
+        <p>Figma Sitemap: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here</p>
+        <p>Follow us: Instagram @thedailycrumb_ct | Facebook The Daily Crumb Bakery</p>
+        <p style="font-size:12px; margin-top:10px;">Internal links: <a href="products.html">Our sourdough bread</a> | <a href="about.html">Our history since 2019</a> | <a href="contact.html">Find Woodstock branch</a></p>
+    </footer>
+
+    <!-- scripts - lowercase js/ fix -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

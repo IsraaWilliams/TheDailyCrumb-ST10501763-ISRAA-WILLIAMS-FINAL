@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- SEO - must match index.html structure -->
+<title>About - The Daily Crumb Bakery Story Since 2019 Woodstock</title>
+<meta name="description" content="Founded 2019 Woodstock Cape Town. Our sourdough fermented 48hrs, baked at 4AM. Meet Israa Williams ST10501763 and our team of 4 local bakers. Halaal, sustainable, community focused.">
+<meta name="keywords" content="about The Daily Crumb, bakery story Woodstock, artisan bakers Cape Town, sourdough history">
+<meta name="author" content="Israa Williams ST10501763">
+<link rel="canonical" href="https://thedailycrumb.netlify.app/about.html">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- SAME HEADER AS INDEX.HTML - so main.js works -->
+<header>
+    <div class="logo">🍞 The Daily Crumb</div>
+    <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="products.html">Products</a>
+        <a href="enquiry.html">Enquiry</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- hero about -->
+    <section class="hero" style="min-height:40vh;">
+        <div>
+            <h1>Our Story - Baked With Love Since 2019</h1>
+            <p>From a small Woodstock garage with one oven to 3 branches across Cape Town. No preservatives, just 48-hour fermented sourdough, French butter, and community.</p>
+            <div style="margin-top:20px; display:flex; gap:15px;">
+                <div><strong>2019</strong><br><small>Founded</small></div>
+                <div><strong>4</strong><br><small>Bakers</small></div>
+                <div><strong>500+</strong><br><small>Loaves daily</small></div>
+            </div>
+            <br>
+            <a href="products.html" class="btn">See Our Bread</a>
+        </div>
+        <div>
+            <picture>
+                <source srcset="images/sourdough.jpg.jpeg" type="image/jpeg">
+                <img src="images/sourdough.jpg.jpeg" alt="Israa Williams head baker with sourdough boule The Daily Crumb Woodstock" class="responsive-img lightbox-img" loading="lazy" width="600" height="400" style="border-radius:12px;">
+            </picture>
+            <p style="font-size:12px; color:#777; margin-top:5px;">Israa's first sourdough starter from 2019 - still used today</p>
+        </div>
+    </section>
+
+    <div class="container" style="max-width:900px; margin:auto;">
+
+        <!-- TABS - same class as index.html -->
+        <h2>Who We Are</h2>
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="story">Our Story</button>
+            <button class="tab-btn" data-tab="team">Team</button>
+            <button class="tab-btn" data-tab="values">Values</button>
+            <button class="tab-btn" data-tab="timeline">Timeline</button>
+        </div>
+
+        <div id="story" class="tab-content active">
+            <h3>How It Started</h3>
+            <p>Founded in 2019 in a small garage in Woodstock, Cape Town by Israa Williams (ST10501763) during her studies. One oven, one sourdough starter, and a dream. We fermented our first loaf for 48 hours because we read that slow fermentation is better for taste and digestion - our customers agreed.</p>
+            <p>In 2020 we moved to 12 Albert Road Woodstock HQ. Bread baked at 4AM, pastries at 5AM, doors open 6AM. By 2022 we opened Claremont and Sea Point because Woodstock customers kept driving far. Now 3 branches, same recipe, no shortcuts.</p>
+            <img src="images/bread.jpg.jpeg" alt="Sourdough boule bakery Woodstock story" style="width:100%;max-width:500px;border-radius:12px;margin-top:1rem;" class="lightbox-img" loading="lazy">
+            <br><br>
+            <p><strong>Our Promise:</strong> Every loaf baked at 4AM, no commercial yeast, just natural starter. No preservatives ever.</p>
+        </div>
+
+        <div id="team" class="tab-content">
+            <h3>Meet The Team</h3>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px;">
+                <div class="card" style="padding:15px;">
+                    <img src="images/sourdough.jpg.jpeg" alt="Israa Williams head baker" style="width:100%; height:180px; object-fit:cover; border-radius:8px;" class="lightbox-img">
+                    <h4>Israa Williams - Head Baker</h4>
+                    <p>ST10501763 - WEDE5020. 5 years artisan baking. Specialist in 48hr sourdough. Started bakery at 20 years old.</p>
+                </div>
+                <div class="card" style="padding:15px;">
+                    <img src="images/croissant.jpg.jpeg" alt="Team baker croissant" style="width:100%; height:180px; object-fit:cover; border-radius:8px;" class="lightbox-img">
+                    <h4>Team of 4 Local Bakers</h4>
+                    <p>All from Woodstock community. Trained in French pastry techniques. Bakers start shift at 3:30AM daily.</p>
+                </div>
+                <div class="card" style="padding:15px;">
+                    <img src="images/coffee.jpg.jpeg" alt="Barista team" style="width:100%; height:180px; object-fit:cover; border-radius:8px;" class="lightbox-img">
+                    <h4>Barista Crew</h4>
+                    <p>3 certified baristas. Single origin Ethiopian beans. Latte art specialists. 4.8 star Google rating because of them.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="values" class="tab-content">
+            <h3>What We Believe</h3>
+            <ul style="line-height:2;">
+                <li><strong>Local Flour:</strong> We source from Western Cape farms only, supporting local agriculture.</li>
+                <li><strong>Sustainable Packaging:</strong> All paper bags compostable, no plastic since 2021.</li>
+                <li><strong>Zero Waste:</strong> Day-old bread donated to Woodstock homeless shelter, not thrown away.</li>
+                <li><strong>Halaal Certified:</strong> All breads Halaal, most pastries Halaal except almond croissant.</li>
+                <li><strong>Community:</strong> We hire from Woodstock, train youth in baking for free on Sundays.</li>
+                <li><strong>No Preservatives:</strong> Just flour, water, salt, starter. That's it since 2019.</li>
+            </ul>
+            <img src="images/hero.jpg.jpeg" alt="Values sustainable bakery" style="width:100%;max-width:500px;border-radius:12px;margin-top:1rem;" class="lightbox-img" loading="lazy">
+        </div>
+
+        <div id="timeline" class="tab-content">
+            <h3>Our Journey</h3>
+            <div style="border-left:3px solid #d4a373; padding-left:20px;">
+                <p><strong>2019 - Garage Start:</strong> One oven in Woodstock garage, selling 10 loaves a day to neighbours.</p>
+                <p><strong>2020 - Albert Road HQ:</strong> Moved to 12 Albert Rd Woodstock, first shop. 50 loaves daily.</p>
+                <p><strong>2021 - Halaal Certified & No Plastic:</strong> All breads Halaal certified, switched to compostable bags.</p>
+                <p><strong>2022 - 2 New Branches:</strong> Opened Claremont 45 Main Rd and Sea Point 8 Regent Rd.</p>
+                <p><strong>2023 - 500 Loaves Daily:</strong> Hit 500 loaves a day milestone, team grew to 4 bakers + 3 baristas.</p>
+                <p><strong>2024 - Best Bakery Award:</strong> Voted Best Artisan Bakery Cape Town - Cape Town Etc Readers Choice.</p>
+                <p><strong>2026 - You Are Here:</strong> Still baking at 4AM, still 48hr fermentation, still Woodstock heart.</p>
+            </div>
+        </div>
+
+        <h2 style="margin-top:3rem;">FAQ - Click to Open</h2>
+        
+        <div class="accordion">
+            <div class="acc-header">What time do you open? +</div>
+            <div class="acc-body"><p>Woodstock HQ: Mon-Sat 6AM-4PM, Sun 7AM-2PM. Claremont: Mon-Sat 6AM-3PM. Sea Point: Mon-Sun 6AM-5PM. Bread out by 6AM, pastries 6:30AM. We bake at 4AM daily.</p></div>
+        </div>
+        <div class="accordion">
+            <div class="acc-header">Do you do custom cakes? +</div>
+            <div class="acc-body"><p>Yes! From R350 Small (6 people), Medium R550 (12 people), Large R850 (20 people). Need 48hr notice. Halaal and nut-free available. Order via Enquiry page with date needed.</p></div>
+        </div>
+        <div class="accordion">
+            <div class="acc-header">Gluten free options? +</div>
+            <div class="acc-body"><p>We have gluten friendly sourdough on Fridays only, limited stock 20 loaves. Fermented 48hrs so easier to digest. Not 100% gluten free - made in same kitchen. First come first served from 6AM.</p></div>
+        </div>
+        <div class="accordion">
+            <div class="acc-header">Where do you source ingredients? +</div>
+            <div class="acc-body"><p>Flour from Western Cape farms, French butter for croissants, single origin Ethiopian beans for coffee. No preservatives, no commercial yeast. All natural starter from 2019.</p></div>
+        </div>
+        <div class="accordion">
+            <div class="acc-header">Do you offer baking classes? +</div>
+            <div class="acc-body"><p>Yes! Free youth training Sundays 9AM Woodstock HQ. Private sourdough classes R450 per person, 3 hours, you take home starter and loaf. Book via Enquiry page - select Baking Class.</p></div>
+        </div>
+
+        <!-- gallery to match index -->
+        <div style="margin-top:3rem;">
+            <h2>Our Bakery in Photos</h2>
+            <div class="gallery-grid">
+                <img src="images/bread.jpg.jpeg" alt="Fresh bread Woodstock" class="lightbox-img">
+                <img src="images/croissant.jpg.jpeg" alt="Croissants" class="lightbox-img">
+                <img src="images/coffee.jpg.jpeg" alt="Coffee" class="lightbox-img">
+                <img src="images/cake.jpg.jpeg" alt="Cake" class="lightbox-img">
+            </div>
+        </div>
+
+        <div style="text-align:center; padding:40px; background:#fff; border-radius:12px; margin-top:30px;">
+            <h2>Come Taste Our Story</h2>
+            <p>Every loaf has 48 hours of love inside it.</p>
+            <a href="products.html" class="btn">View Menu</a>
+            <a href="contact.html" class="btn-outline" style="margin-left:10px;">Visit Us</a>
+        </div>
+    </div>
+</main>
+
+<!-- SAME LIGHTBOX AS INDEX.HTML -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="Enlarged bakery image">
+</div>
+
+<footer>
+    <p>&copy; 2026 The Daily Crumb | ST10501763 Israa Williams - WEDE5020</p>
+    <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="products.html">Products</a> | <a href="contact.html">Contact</a> | <a href="sitemap.xml">Sitemap</a></p>
+    <p>Figma Sitemap: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

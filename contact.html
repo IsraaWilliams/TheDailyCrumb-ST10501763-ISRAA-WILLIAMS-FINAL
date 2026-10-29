@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 3 Branches Woodstock Claremont Sea Point | The Daily Crumb</title>
+    <meta name="description" content="Contact The Daily Crumb bakery. 3 locations Woodstock 12 Albert Rd, Claremont 45 Main Rd, Sea Point 8 Regent Rd. Map and contact form. Reply within 2hrs.">
+    <meta name="keywords" content="contact bakery Cape Town, Woodstock bakery phone, Claremont bakery, Sea Point bakery">
+    <meta name="author" content="Israa Williams ST10501763">
+    <link rel="canonical" href="https://thedailycrumb.netlify.app/contact.html">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- SAME HEADER AS ALL OTHER PAGES -->
+    <header>
+        <div class="logo">🍞 The Daily Crumb</div>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero - NEW, longer -->
+        <section class="hero" style="min-height:35vh;">
+            <div>
+                <h1>Contact Us - 3 Locations in Cape Town - Reply in 2hrs</h1>
+                <p>Woodstock HQ bakes at 4AM, Claremont and Sea Point open 6AM. WhatsApp, call, or fill form. Interactive map below with 3 markers - click for address, phone, hours.</p>
+                <div style="display:flex; gap:10px; margin-top:15px; flex-wrap:wrap;">
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">📍 Woodstock 12 Albert Rd</span>
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">📍 Claremont 45 Main Rd</span>
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">📍 Sea Point 8 Regent Rd</span>
+                </div>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="images/sourdough.jpg.jpeg" type="image/jpeg">
+                    <img src="images/sourdough.jpg.jpeg" alt="Contact The Daily Crumb 3 branches" class="responsive-img lightbox-img" loading="lazy" width="600" height="400" style="border-radius:12px;">
+                </picture>
+                <p style="font-size:12px; color:#777; margin-top:5px;">We reply within 2 hours - Mon-Sat</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- 3 branches cards - LONGER NOW -->
+            <h2>Our 3 Branches</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/bread.jpg.jpeg" alt="Woodstock branch" style="width:100%; height:140px; object-fit:cover; border-radius:8px; margin-bottom:10px;" class="lightbox-img">
+                        <h3>Woodstock HQ - Main Bakery</h3>
+                        <p>12 Albert Road, Woodstock, Cape Town 7925<br>
+                        <strong>Phone:</strong> 021 123 4567<br>
+                        <strong>WhatsApp:</strong> 082 123 4567<br>
+                        <strong>Email:</strong> woodstock@thedailycrumb.co.za<br>
+                        <strong>Hours:</strong> Mon-Sat 6AM-4PM, Sun 7AM-2PM<br>
+                        <strong>Bakes:</strong> Bread 4AM, Pastries 5AM<br>
+                        <strong>Parking:</strong> Street parking Albert Rd</p>
+                        <a href="https://www.google.com/maps?q=12+Albert+Road+Woodstock+Cape+Town" target="_blank" class="btn-outline" style="display:inline-block; margin-top:10px; padding:6px 12px; font-size:13px;">Open in Google Maps</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/croissant.jpg.jpeg" alt="Claremont branch" style="width:100%; height:140px; object-fit:cover; border-radius:8px; margin-bottom:10px;" class="lightbox-img">
+                        <h3>Claremont Branch</h3>
+                        <p>45 Main Road, Claremont, Cape Town 7708<br>
+                        <strong>Phone:</strong> 021 765 4321<br>
+                        <strong>WhatsApp:</strong> 082 765 4321<br>
+                        <strong>Email:</strong> claremont@thedailycrumb.co.za<br>
+                        <strong>Hours:</strong> Mon-Sat 6AM-3PM, Sun Closed<br>
+                        <strong>Bakes:</strong> Delivered from Woodstock 5:30AM<br>
+                        <strong>Parking:</strong> Behind Main Rd Centre</p>
+                        <a href="https://www.google.com/maps?q=45+Main+Road+Claremont+Cape+Town" target="_blank" class="btn-outline" style="display:inline-block; margin-top:10px; padding:6px 12px; font-size:13px;">Open in Google Maps</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/coffee.jpg.jpeg" alt="Sea Point branch" style="width:100%; height:140px; object-fit:cover; border-radius:8px; margin-bottom:10px;" class="lightbox-img">
+                        <h3>Sea Point Branch</h3>
+                        <p>8 Regent Road, Sea Point, Cape Town 8005<br>
+                        <strong>Phone:</strong> 021 555 0001<br>
+                        <strong>WhatsApp:</strong> 082 555 0001<br>
+                        <strong>Email:</strong> seapoint@thedailycrumb.co.za<br>
+                        <strong>Hours:</strong> Mon-Sun 6AM-5PM<br>
+                        <strong>Bakes:</strong> Delivered from Woodstock 5:30AM<br>
+                        <strong>Parking:</strong> Regent Rd side street</p>
+                        <a href="https://www.google.com/maps?q=8+Regent+Road+Sea+Point+Cape+Town" target="_blank" class="btn-outline" style="display:inline-block; margin-top:10px; padding:6px 12px; font-size:13px;">Open in Google Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- leaflet interactive map -->
+            <h2 style="margin-top:40px;">Interactive Map - All 3 Locations - Click Markers</h2>
+            <p>Part 3 requirement - Leaflet map with 3 markers. Same map code as index.html so main.js works hand in hand.</p>
+            <div id="map" style="height:400px; border-radius:12px; margin-top:15px;"></div>
+            <p style="font-size:14px; color:#666; margin-top:8px;">Interactive map shows Woodstock, Claremont, Sea Point markers. Click markers for info, phone, hours. Zoom in/out.</p>
+
+            <!-- google maps embeds -->
+            <h2 style="margin-top:40px;">Detailed Location Maps</h2>
+            <div class="services-grid">
+                <div>
+                    <h3>Woodstock HQ Map</h3>
+                    <iframe src="https://www.google.com/maps?q=12+Albert+Road+Woodstock+Cape+Town&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Woodstock location map"></iframe>
+                    <p style="font-size:13px; margin-top:6px;">12 Albert Rd - Main bakery, all bread baked here at 4AM</p>
+                </div>
+                <div>
+                    <h3>Claremont Map</h3>
+                    <iframe src="https://www.google.com/maps?q=45+Main+Road+Claremont+Cape+Town&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Claremont location map"></iframe>
+                    <p style="font-size:13px; margin-top:6px;">45 Main Rd - Near Cavendish, next to Main Rd Centre</p>
+                </div>
+                <div>
+                    <h3>Sea Point Map</h3>
+                    <iframe src="https://www.google.com/maps?q=8+Regent+Road+Sea+Point+Cape+Town&output=embed" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sea Point location map"></iframe>
+                    <p style="font-size:13px; margin-top:6px;">8 Regent Rd - Near Sea Point promenade, beach view</p>
+                </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1.2fr 0.8fr; gap:25px; margin-top:40px;" class="services-grid">
+                <!-- contact form with validation next to fields -->
+                <div style="background:#fff; padding:25px; border-radius:12px;">
+                    <h2>Send Us a General Message</h2>
+                    <p style="font-size:13px; color:#666;">Regex validation - Part 3 requirement. Errors show next to field, same as enquiry.html.</p>
+                    <form id="contactForm" novalidate>
+                        <label for="cName">Full Name *</label>
+                        <input type="text" id="cName" name="name" required placeholder="Your full name e.g. Israa Williams" style="width:100%; padding:10px; margin:8px 0 5px 0; border-radius:6px; border:1px solid #ccc;">
+                        <span class="error" id="cNameError" style="color:red; font-size:12px;"></span>
+
+                        <label for="cEmail" style="margin-top:15px; display:block;">Email Address *</label>
+                        <input type="email" id="cEmail" name="email" required placeholder="name@gmail.com" style="width:100%; padding:10px; margin:8px 0 5px 0; border-radius:6px; border:1px solid #ccc;">
+                        <span class="error" id="cEmailError" style="color:red; font-size:12px;"></span>
+
+                        <label for="cPhone" style="margin-top:15px; display:block;">Phone (optional)</label>
+                        <input type="tel" id="cPhone" name="phone" placeholder="0821234567" style="width:100%; padding:10px; margin:8px 0 5px 0; border-radius:6px; border:1px solid #ccc;">
+                        <span class="error" id="cPhoneError" style="color:red; font-size:12px;"></span>
+
+                        <label for="cType" style="margin-top:15px; display:block;">Message Type *</label>
+                        <select id="cType" name="type" required style="width:100%; padding:10px; margin:8px 0 5px 0; border-radius:6px; border:1px solid #ccc;">
+                            <option value="">-- Select Type --</option>
+                            <option value="General">General Enquiry</option>
+                            <option value="Support">Support - Order Issue</option>
+                            <option value="Feedback">Feedback - Compliments</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Delivery">Delivery Issue</option>
+                            <option value="Jobs">Jobs - Work With Us</option>
+                        </select>
+                        <span class="error" id="cTypeError" style="color:red; font-size:12px;"></span>
+
+                        <label for="cMsg" style="margin-top:15px; display:block;">Full Message *</label>
+                        <textarea id="cMsg" name="message" rows="5" required minlength="15" placeholder="Write your message here, at least 15 characters... e.g. I visited Woodstock branch today and loved the sourdough" style="width:100%; padding:10px; margin:8px 0 5px 0; border-radius:6px; border:1px solid #ccc;"></textarea>
+                        <span class="error" id="cMsgError" style="color:red; font-size:12px;"></span>
+
+                        <button type="submit" class="btn" style="width:100%; padding:12px; margin-top:20px; font-size:16px;">Send Message via Email</button>
+                    </form>
+                    <p id="contactStatus" style="margin-top:15px; font-weight:600;"></p>
+                </div>
+
+                <div>
+                    <div style="padding:20px; background:#fff; border-radius:12px; margin-bottom:20px;">
+                        <h3>Other ways to contact</h3>
+                        <p style="line-height:2; font-size:14px;">
+                        <strong>WhatsApp:</strong> 082 123 4567 (Fastest)<br>
+                        <strong>Instagram:</strong> @thedailycrumb_ct<br>
+                        <strong>Facebook:</strong> The Daily Crumb Bakery<br>
+                        <strong>Email HQ:</strong> hello@thedailycrumb.co.za<br>
+                        <strong>Response time:</strong> Within 2hrs Mon-Sat<br>
+                        <strong>Emergency:</strong> Call Woodstock 021 123 4567</p>
+                        <img src="images/cake.jpg.jpeg" alt="Contact bakery" style="width:100%; height:140px; object-fit:cover; border-radius:8px; margin-top:10px;" class="lightbox-img">
+                    </div>
+
+                    <div style="padding:20px; background:#fff; border-radius:12px; margin-bottom:20px;">
+                        <h3>FAQ - Contact</h3>
+                        <div class="accordion">
+                            <div class="acc-header">Fastest way to reach you? +</div>
+                            <div class="acc-body"><p>WhatsApp Woodstock 082 123 4567. We reply within 30 mins during shop hours 6AM-4PM. Email takes 2hrs.</p></div>
+                        </div>
+                        <div class="accordion">
+                            <div class="acc-header">Do you have Halaal certificate to view? +</div>
+                            <div class="acc-body"><p>Yes, Halaal certificate displayed at Woodstock HQ till. Also can WhatsApp you a copy. All breads Halaal.</p></div>
+                        </div>
+                    </div>
+
+                    <div style="padding:20px; background:#d4a373; color:#fff; border-radius:12px;">
+                        <h3 style="color:#fff;">Opening Hours Today</h3>
+                        <p style="font-size:14px; line-height:2;">
+                        Woodstock: 6AM-4PM (Today)<br>
+                        Claremont: 6AM-3PM (Today)<br>
+                        Sea Point: 6AM-5PM (Today)<br><br>
+                        Bread out: 6AM<br>
+                        Pastries out: 6:30AM<br>
+                        Best to come before 10AM for full range</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged contact image">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The Daily Crumb | ST10501763 Israa Williams - WEDE5020</p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="products.html">Products</a> | <a href="enquiry.html">Enquiry</a> | <a href="contact.html">Contact</a> | <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots</a></p>
+        <p>Figma Sitemap: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here</p>
+        <p>Follow us: Instagram @thedailycrumb_ct | Facebook The Daily Crumb Bakery</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

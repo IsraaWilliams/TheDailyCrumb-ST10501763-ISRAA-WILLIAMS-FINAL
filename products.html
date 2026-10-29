@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Menu & Prices | The Daily Crumb Bakery Cape Town</title>
+    <meta name="description" content="Full menu Sourdough R55, Croissants R28, Custom cakes R350. Search and filter our artisan breads, pastries and coffee. Woodstock Claremont Sea Point.">
+    <meta name="keywords" content="sourdough Cape Town, bakery menu, croissant price, custom cakes">
+    <meta name="author" content="Israa Williams ST10501763">
+    <link rel="canonical" href="https://thedailycrumb.netlify.app/products.html">
+    <!-- fonts fix - same as index + about -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- header with mobile toggle - SAME AS INDEX + ABOUT -->
+    <header>
+        <div class="logo">🍞 The Daily Crumb</div>
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle menu">☰</button>
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero for products - NEW, longer -->
+        <section class="hero" style="min-height:35vh;">
+            <div>
+                <h1>Our Bakery Menu & Prices - Baked at 4AM Daily</h1>
+                <p>All breads baked fresh daily at 4AM. No preservatives, 48hr fermentation. Search, filter, sort - find your favourite sourdough R55, croissant R28, coffee R32, custom cake from R350.</p>
+                <div style="margin-top:15px; display:flex; gap:15px; flex-wrap:wrap;">
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">🍞 Bread from R55</span>
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">🥐 Pastry from R28</span>
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">☕ Coffee from R28</span>
+                    <span style="background:#fff; padding:6px 12px; border-radius:20px; font-size:13px;">🎂 Cakes from R350</span>
+                </div>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="images/cake.jpg.jpeg" type="image/jpeg">
+                    <img src="images/cake.jpg.jpeg" alt="Custom cakes and bread menu The Daily Crumb" class="responsive-img lightbox-img" loading="lazy" width="600" height="400" style="border-radius:12px;">
+                </picture>
+                <p style="font-size:12px; color:#777; margin-top:5px;">All prices include VAT - fresh daily</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <h2>Search & Filter Menu</h2>
+            <p>Live search - type sourdough, croissant, coffee etc. Lecturer requirement for dynamic filtering.</p>
+
+            <!-- filter bar - same ids as before so products.js still works -->
+            <div class="filter-bar">
+                <input type="text" id="searchInput" placeholder="Search products... eg sourdough, croissant, R55">
+                <select id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="bread">Bread</option>
+                    <option value="pastry">Pastry</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="cake">Custom Cakes</option>
+                </select>
+                <select id="sortSelect">
+                    <option value="default">Sort by</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name A-Z</option>
+                </select>
+            </div>
+
+            <!-- product list will be loaded here by JS -->
+            <div id="productList" class="services-grid">
+                <!-- JS will inject cards here - uses images .jpeg -->
+            </div>
+
+            <p id="noResults" style="display:none; text-align:center; padding:20px; background:#fff; border-radius:8px;">No products found. Try searching "bread" or "R55" or select different category.</p>
+
+            <!-- extra info - LONGER NOW -->
+            <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; margin-top:40px;">
+                <div style="padding:20px; background:#fff; border-radius:12px;">
+                    <h3>🍞 Bread Range</h3>
+                    <ul style="line-height:2;">
+                        <li>White Sourdough - R55</li>
+                        <li>Wholewheat Sourdough - R60</li>
+                        <li>Rye Sourdough - R65</li>
+                        <li>Seeded Sourdough - R68</li>
+                        <li><strong>Bulk: 20+ loaves = R5 off each</strong></li>
+                    </ul>
+                    <img src="images/bread.jpg.jpeg" alt="Bread price list" style="width:100%; height:120px; object-fit:cover; border-radius:8px; margin-top:10px;" class="lightbox-img">
+                </div>
+                <div style="padding:20px; background:#fff; border-radius:12px;">
+                    <h3>🥐 Pastry Range</h3>
+                    <ul style="line-height:2;">
+                        <li>Butter Croissant - R28</li>
+                        <li>Pain au Chocolat - R32</li>
+                        <li>Cinnamon Bun - R35</li>
+                        <li>Almond Croissant - R38</li>
+                        <li><strong>Box of 12 - R300 (Office deal)</strong></li>
+                    </ul>
+                    <img src="images/croissant.jpg.jpeg" alt="Pastry price list" style="width:100%; height:120px; object-fit:cover; border-radius:8px; margin-top:10px;" class="lightbox-img">
+                </div>
+                <div style="padding:20px; background:#fff; border-radius:12px;">
+                    <h3>☕ Coffee Range</h3>
+                    <ul style="line-height:2;">
+                        <li>Americano - R28</li>
+                        <li>Flat White - R32</li>
+                        <li>Cappuccino - R32</li>
+                        <li>Latte - R34</li>
+                        <li><strong>Beans 250g R95 / 1kg R320</strong></li>
+                    </ul>
+                    <img src="images/coffee.jpg.jpeg" alt="Coffee price list" style="width:100%; height:120px; object-fit:cover; border-radius:8px; margin-top:10px;" class="lightbox-img">
+                </div>
+                <div style="padding:20px; background:#fff; border-radius:12px;">
+                    <h3>🎂 Custom Cakes</h3>
+                    <ul style="line-height:2;">
+                        <li>Small (6 ppl) - from R350</li>
+                        <li>Medium (12 ppl) - from R550</li>
+                        <li>Large (20 ppl) - from R850</li>
+                        <li>Wedding cakes - Quote</li>
+                        <li><strong>Need 48hr notice, Halaal option</strong></li>
+                    </ul>
+                    <img src="images/cake.jpg.jpeg" alt="Cake price list" style="width:100%; height:120px; object-fit:cover; border-radius:8px; margin-top:10px;" class="lightbox-img">
+                </div>
+            </div>
+
+            <div style="margin-top:30px; padding:25px; background:#fff; border-radius:12px; border-left:4px solid #d4a373;">
+                <h2>Delivery & Ordering Info</h2>
+                <p>All prices include VAT. Free delivery within 5km of Woodstock for orders over R250. For Claremont and Sea Point we use Uber delivery at customer cost. Bulk orders over R1000 free delivery Cape Town CBD.</p>
+                <p><strong>Baking times:</strong> Bread comes out oven at 6AM, pastries at 6:30AM. First come first served. Custom cakes need 48hrs notice via Enquiry form.</p>
+                <div style="margin-top:15px;">
+                    <a href="enquiry.html" class="btn">Order Now via Enquiry</a>
+                    <a href="contact.html" class="btn-outline" style="margin-left:10px;">Find Our 3 Branches</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- lightbox - SAME AS INDEX + ABOUT -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged product image">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The Daily Crumb | ST10501763 Israa Williams - WEDE5020</p>
+        <p><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="products.html">Products</a> | <a href="contact.html">Contact</a> | <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots</a></p>
+        <p>Figma Sitemap: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here</p>
+        <p style="font-size:12px; margin-top:10px;">Popular: <a href="products.html">Sourdough R55</a> | <a href="products.html">Croissant R28</a> | <a href="enquiry.html">Custom cakes R350</a></p>
+    </footer>
+
+    <!-- js files - ORDER MATTERS: products.js first then main.js - same as before -->
+    <script src="js/products.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
