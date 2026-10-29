@@ -160,7 +160,7 @@
 
 # Figma & Live Links
 - Figma Sitemap: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here
-- Live Site: https://thedailycrumb.netlify.app
+- Live Site: https://thedailycrumb-st10501763-final.netlify.app 
 - GitHub: https://github.com/ST10501763/TheDailyCrumb
 
 # Student
