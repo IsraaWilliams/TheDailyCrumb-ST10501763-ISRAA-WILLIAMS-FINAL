@@ -6,8 +6,8 @@
 A responsive bakery website for a small business with 3 branches in Cape Town - Woodstock HQ, Claremont, Sea Point. Built for WEDE5020 assignment.
 
 ### 🔗 Live Links
-- **Live Site (Netlify):** https://thedailycrumb-ST10501763.netlify.app
-- **GitHub Repo:** https://github.com/ST10501763/TheDailyCrumb
+- **Live Site (Netlify):** https://thedailycrumb-st10501763-finals.netlify.app
+- **GitHub Repo:** 
 - **Figma Sitemap:** https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here
 
 > Replace the links above with your real Netlify + GitHub links after deploying
