@@ -7,7 +7,7 @@
 # ----------------------------------------------------
 - Created 5 core HTML pages: index.html, about.html, products.html, enquiry.html, contact.html
 - Created basic folder structure: CSS/ JS/ IMAGES/ (uppercase - caused issue later)
-- Added header nav with logo The Daily Crumb 🍞
+- Added header nav with logo The Daily Crumb 🍞 
 - Added placeholder images: hero-400.jpg, bread.jpg etc - many missing
 - Added Figma sitemap link: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here
 - Added initial sitemap.xml and robots.txt basic
