@@ -14,4 +14,4 @@ var products = [
     {id:13, name:"Custom Birthday Cake Small", category:"cake", price:350, desc:"From R350 small serves 6, 48hr notice, Halaal option.", img:"images/cake.jpeg"},
     {id:14, name:"Custom Birthday Cake Medium", category:"cake", price:550, desc:"Medium serves 12 people, custom design.", img:"images/cake.jpeg"},
     {id:15, name:"Custom Wedding Cake Large", category:"cake", price:850, desc:"Large wedding cake from R850, quote on enquiry.", img:"images/cake.jpeg"}
-];
+]
