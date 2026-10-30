@@ -9,7 +9,7 @@
 - Created basic folder structure: CSS/ JS/ IMAGES/ (uppercase - caused issue later)
 - Added header nav with logo The Daily Crumb 🍞
 - Added placeholder images: hero-400.jpg, bread.jpg etc - many missing
-- Added Figma sitemap link: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here
+- Added Figma sitemap link: https://www.figma.com/make/GJXIROwbUSpQY7WpBFo2mN/TheDailyCrumb?t=eCmialf0GTrcuYCP-20&fullscreen=1 
 - Added initial sitemap.xml and robots.txt basic
 - First commit - only 2 commits total (lecturer flagged this)
 
@@ -151,7 +151,7 @@
 - Added animations fadeIn for tabs
 
 # 13. COMMITS & TESTING - Final
-- Tested all 5 pages on localhost:5500 and Netlify https://thedailycrumb.netlify.app
+- Tested all 5 pages on localhost:5500 and Netlify https://thedailycrumb-st10501763-final.netlify.app
 - Tested mobile nav, tabs, accordion, lightbox, modal, maps 3 markers, enquiry validation with regex, contact mailto, product filter search
 - All images load .jpeg, no 404
 - Folder structure lowercase: css/, js/, images/, docs/
@@ -159,9 +159,9 @@
 - Ready for submission 27 Oct 2026
 
 # Figma & Live Links
-- Figma Sitemap: https://www.figma.com/board/DailyCrumb-ST10501763-Is-Your-Link-Here
-- Live Site: https://thedailycrumb-st10501763-final.netlify.app 
-- GitHub: https://github.com/ST10501763/TheDailyCrumb
+- Figma Sitemap: https://write-depth-95415566.figma.site
+- Live Site: https://thedailycrumb-st10501763-final.netlify.app
+- GitHub: https://github.com/IsraaWilliams/TheDailyCrumb-ST10501763-ISRAA-WILLIAMS-FINAL
 
 # Student
 - Israa Williams ST10501763 WEDE5020
