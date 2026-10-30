@@ -7,7 +7,7 @@ console.log("main.js loaded - ST10501763 - all pages");
 // ===================== MOBILE NAV TOGGLE - works on all pages =====================
 var mobileBtn = document.getElementById("mobileToggle") || document.getElementById("navToggle");
 var navBar = document.getElementById("mainNav") || document.getElementById("navMenu");
-
+                              
 if(mobileBtn && navBar){
     mobileBtn.addEventListener("click", function(){
         if(navBar.classList.contains("show")){
