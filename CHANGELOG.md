@@ -41,7 +41,7 @@
   → Example: "fix: rename IMAGES to images lowercase", "fix: add google fonts to all pages", "feat: add picture element jpeg"
 
 # ----------------------------------------------------
-# Part 3 - Final Build - 27 Oct 2026 - Lecturer Requirements Part 3
+# Part 3 - Final Build - 2 November 2026 - Lecturer Requirements Part 3
 # ----------------------------------------------------
 
 # 1. MOBILE NAV TOGGLE - Requirement: Hamburger menu on mobile
