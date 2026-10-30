@@ -130,7 +130,7 @@ All HTML uses `<picture><source srcset="images/X.jpeg" type="image/jpeg"><img sr
 ---
 
 ### 🚀 How to Run Locally
-1. Clone: `git clone https://github.com/ST10501763/TheDailyCrumb.git`
+1. Clone: `https://github.com/IsraaWilliams/TheDailyCrumb-ST10501763-ISRAA-WILLIAMS-FINAL`
 2. Open in VS Code
 3. Install Live Server extension
 4. Right-click `index.html` → Open with Live Server
