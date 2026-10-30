@@ -1,7 +1,7 @@
 # 🍞 The Daily Crumb Bakery - Cape Town
 **Student:** Israa Williams - ST10501763  
 **Module:** WEDE5020 Part 1, 2, 3  
-**Date:** 27 Oct 2026
+**Date:** 2 November 2026
 
 A responsive bakery website for a small business with 3 branches in Cape Town - Woodstock HQ, Claremont, Sea Point. Built for WEDE5020 assignment.
 
